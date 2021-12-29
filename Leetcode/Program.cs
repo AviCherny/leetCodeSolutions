@@ -10,7 +10,7 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(AddTwoNumbers.AddTwointNumbers(8, 9));
+            
         }
     }
 }
