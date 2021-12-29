@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Leetcode
 {
-    class Program
+    class AddTwoNumbers
     {
-        static void Main(string[] args)
+        public static int AddTwointNumbers(int num1, int num2)
         {
-            Console.WriteLine(AddTwoNumbers.AddTwointNumbers(5, 6));
+            return num1 + num2;
         }
     }
 }
