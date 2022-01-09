@@ -10,12 +10,30 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-            var arr = new int[] { 2, 6, 9, 7, 8, 2, 4, 6, 2, 8, 7, 5, 3 };
-            SlidingWindow.FindMaxSumSubArrayWithFixedSubSize(new int[] { 2, 6, 9, 7, 8, 2, 4, 6, 2, 8, 7, 5, 3 }, 3);
-            SlidingWindow.FindMinSumSubArrayWithFixedSubSize(arr, 9);
-            SlidingWindow.FindSmallestSubArrayThatSumBiggerThanGivenValue(arr, 9);
-            var a = SolutionUsingDictionary.ReturnTwoIndexesOfSumTarget(new int[] { 3,2,4}, 6);
-            
+            LinkedList<int> list1 = new LinkedList<int>();
+            LinkedList<int> list2 = new LinkedList<int>();
+
+            LinkedListNode<int> node1 = new LinkedListNode<int>(1);
+            LinkedListNode<int> node2 = new LinkedListNode<int>(2);
+            LinkedListNode<int> node3 = new LinkedListNode<int>(3);
+            LinkedListNode<int> node4 = new LinkedListNode<int>(2);
+            LinkedListNode<int> node5 = new LinkedListNode<int>(3);
+            LinkedListNode<int> node6 = new LinkedListNode<int>(6);
+
+            list1.AddFirst(node1);
+            list1.AddLast(node2);
+            list1.AddLast(node3);
+
+            list2.AddFirst(node4);
+            list2.AddLast(node5);
+            list2.AddLast(node6);
+
+            LinkListSolutions.MergeTwoLinkList(list1, list2);
+
+
+
+
+
         }
     }
 }
